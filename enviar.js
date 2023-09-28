@@ -18,9 +18,9 @@ formulario.addEventListener('submit', function (event) {
 
     // Crear el objeto de correo
     const msg = {
-        to: 'destinatario@correo.com', // Reemplaza con tu dirección de correo
+        to: 'diego.jaasiel.grajeda.garcia@gmail.com', // Reemplaza con tu dirección de correo
         from: email,
-        subject: 'Nuevo mensaje de contacto',
+        subject: 'RESERVA',
         text: `Nombre: ${nombre}\nCorreo Electrónico: ${email}\nMensaje: ${mensaje}`,
     };
 
