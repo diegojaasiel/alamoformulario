@@ -1,21 +1,14 @@
- <!DOCTYPE html>
-<html>
-<head>
-    <script src="enviar.js"></script>
-    <title>Formulario de Alquiler de Autos</title>
-</head>
-<body>
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Formulario de Alquiler de Autos</title>
 </head>
 <body>
     <h2>Formulario de Alquiler de Autos</h2>
-    <form id="formularioAlquiler">>
+    <!-- Ajusta la acción del formulario para que apunte a la página PHP -->
+    <form id="formularioAlquiler" method="post" action="mail.php">
         <label for="NombreEmpresa">NOMBRE DE LA EMPRESA:</label>
         <input type="text" id="NombreEmpresa" name="NombreEmpresa" required><br><br>
-
         <label for="IdCode">ID CLIENTE:</label>
         <input type="text" id="IdCode" name="IdCode" required><br><br>
 
@@ -58,6 +51,8 @@
         <label for="Garantia">GARANTÍA:</label>
         <input type="text" id="Garantia" name="Garantia" required><br><br>
 
+        <!-- Agrega los otros campos del formulario aquí -->
+        
         <input type="submit" value="RESERVAR">
     </form>
 </body>
