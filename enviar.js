@@ -5,19 +5,19 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey('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');
 
 // Función para enviar el correo
-function enviarCorreo(formulario) {
-    // Obtén los valores del formulario
-    const nombreEmpresa = formulario.NombreEmpresa.value;
-    const idCliente = formulario.IdCode.value;
-    const ciudadDestino = formulario.CiudadDestino.value;
-    const oficinaDestino = formulario.OficinaDestino.value;
-    const fechaHoraEntrega = formulario.FechaHoraEntrega.value;
-    const fechaHoraDevolucion = formulario.FechaHoraDevolucion.value;
-    const nombreConductor = formulario.NombreConductor.value;
-    const conductorAdicional = formulario.ConductorAdicional.checked ? "Sí" : "No";
-    const categoriaAuto = formulario.CategoriaAuto.value;
-    const metodoPago = formulario.MetodoPago.value;
-    const garantia = formulario.Garantia.value;
+function enviarCorreo() {
+    const nombreEmpresa = document.getElementById('NombreEmpresa').value;
+    const idCliente = document.getElementById('IdCode').value;
+    const ciudadDestino = document.getElementById('CiudadDestino').value;
+    const oficinaDestino = document.getElementById('OficinaDestino').value;
+    const fechaHoraEntrega = document.getElementById('FechaHoraEntrega').value;
+    const fechaHoraDevolucion = document.getElementById('FechaHoraDevolucion').value;
+    const nombreConductor = document.getElementById('NombreConductor').value;
+    const conductorAdicional = document.getElementById('ConductorAdicional').checked ? "Sí" : "No";
+    const categoriaAuto = document.getElementById('CategoriaAuto').value;
+    const metodoPago = document.getElementById('MetodoPago').value;
+    const garantia = document.getElementById('Garantia').value;
+
 
     // Construye el cuerpo del correo
     const mensaje = `
