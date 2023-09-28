@@ -2,7 +2,7 @@
 const sgMail = require('@sendgrid/mail');
 
 // Configurar la API Key de SendGrid
-sgMail.setApiKey('TU_API_KEY_AQUI');
+sgMail.setApiKey('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');
 
 // Obtener el formulario
 const formulario = document.getElementById('formularioContacto');
