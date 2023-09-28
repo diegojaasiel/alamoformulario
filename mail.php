@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 
 // Configura la API Key de SendGrid
-$apiKey = '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';
+$apiKey = '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';
 
 // Función para enviar el correo
 function enviarCorreo() {
