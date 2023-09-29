@@ -6,6 +6,7 @@ $apiKey = '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
 
 // Función para enviar el correo
 function enviarCorreo() {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
     $nombreEmpresa = $_POST['NombreEmpresa'];
     $idCliente = $_POST['IdCode'];
     $ciudadDestino = $_POST['CiudadDestino'];
